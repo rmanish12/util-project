@@ -1,0 +1,38 @@
+body {
+    min-height: 100% !important;;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.file-upload-heading {
+    text-align: center;
+    margin: 2%;
+}
+
+.file-upload-progress-bar {
+    margin-top: 5%;
+}
+
+.margin-top-5 {
+    margin-top: 5% !important;
+}
+
+.back-green {
+    background-color: greenyellow;
+}
+
+.margin-1 {
+    margin: 1% !important
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.box-shadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}

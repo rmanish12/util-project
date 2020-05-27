@@ -1,11 +1,18 @@
 import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-class App extends React.Component {
-    render() {
-        return(
-            <h1>Test Application</h1>
-        )
-    }
+import Home from './Home'
+import Files from './FileUpload'
+
+const App = () => {
+    return (
+        <>
+            <Switch>
+                <Route path="/files" exact component={Files} />
+                <Route path="/" exact component={Home} />
+            </Switch>
+        </>
+    )
 }
 
 export default App
