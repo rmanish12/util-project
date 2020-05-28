@@ -16,11 +16,10 @@ const fileUpload = props => {
     const [error, setError] = useState(false)
 
     const onClick = e => {
-        console.log('clicked')
-        console.log(file)
 
         setSuccess(false)
         setError(false)
+
         const formData = new FormData()
         formData.append('file', file)
 
@@ -41,6 +40,7 @@ const fileUpload = props => {
     const onChange = e => {
         console.log('uploaded')
         const file = e.target.files[0]
+        console.log(file)
         setFileName(file.name)
         setFile(file)
     }
@@ -78,9 +78,7 @@ const fileUpload = props => {
                     <div className="file-upload-heading">
                         <h2>React File Upload</h2>
                     </div>
-                </Grid>
 
-                <Grid item xs={10} sm={8}>
                     <Form>
                         <Form.File
                             id="file-upload"
@@ -90,9 +88,7 @@ const fileUpload = props => {
                             onChange={onChange}
                         />
                     </Form>
-                </Grid>
 
-                <Grid item xs={10} sm={8}>
                     <ProgressBar
                         striped
                         variant="success"
@@ -100,13 +96,11 @@ const fileUpload = props => {
                         label={uploadPercentage}
                         className="file-upload-progress-bar"
                     />
-                </Grid>
 
-                <Grid item xs={10} sm={8} className="margin-top-5">
                     <Button
                         variant="contained"
                         color="primary"
-                        className="width-100"
+                        className="width-100 margin-top-5"
                         onClick={onClick}
                     >
                         Submit
