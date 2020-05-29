@@ -41,3 +41,12 @@ body {
     margin-left: 10% !important;
     background-color: aquamarine !important;
 }
+
+.english-button {
+    width: 45%;
+}
+
+.hindi-button {
+    width: 45%;
+    margin-left: 10% !important;
+}

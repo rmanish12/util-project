@@ -13,6 +13,7 @@ const home = () => {
             <ul>
                 <li><Link to="/files">File Upload</Link></li>
                 <li><Link to="/excel">Export Excel</Link></li>
+                <li><Link to="/translate">Internationalization</Link></li>
             </ul>
         </>
     )

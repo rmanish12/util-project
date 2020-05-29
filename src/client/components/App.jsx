@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Files from './FileUpload'
 import ExportExcel from './ExportExcel'
+import Translate from './Internationalization'
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Switch>
                 <Route path="/files" exact component={Files} />
                 <Route path="/excel" exact component={ExportExcel} />
+                <Route path="/translate" exact component={Translate} />
                 <Route path="/" exact component={Home} />
             </Switch>
         </>
